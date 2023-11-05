@@ -1,4 +1,3 @@
-# artistic.ai-hub
 # ArtisticAI
 
 ## Elevate Your Creativity
