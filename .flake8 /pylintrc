@@ -1,0 +1,41 @@
+[flake8]
+# it's not a bug that we aren't using all of hacking
+ignore = E226,E302,E41
+max-line-length = 120
+exclude = .tox,build,*.egg,*.pyc,*.pyo,__pycache__,old,build,dist,venv
+max-complexity = 10
+[MASTER]
+ignore=CVS,migrations,venv
+load-plugins=pylint_django
+
+[MESSAGES CONTROL]
+# Only show warnings with the following IDs
+enable=
+    W0614,
+    W0401,
+    W0611,
+    W0613,
+    W0612,
+    W0511
+
+# Disable the message, report, category or checker with the given id(s).
+disable=
+    C0111, # Missing docstring
+    R0903, # Too few public methods
+
+[REPORTS]
+output-format=colorized
+
+[FORMAT]
+# Maximum number of characters on a single line.
+max-line-length = 120
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args=6
+
+# Maximum number of attributes for a class (see R0902).
+max-attributes=7
+
+# Maximum number of boolean expressions in a if statement
+max-bool-expr=5
